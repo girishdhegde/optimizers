@@ -81,7 +81,7 @@ Clone the repository and open terminal in same directory and follow the below in
 ![](https://github.com/girishdhegde/optimizers/output/rmsprop.gif)
 #### Adam:
 ```python Adam.py```
-![](https://github.com/girishdhegde/optimizers/output/adam.gif)
+![](https://github.com/girishdhegde/optimizers/blob/main/output/adam.gif)
 #### All optimizers:
 ```python optimizers.py```
 ![](https://github.com/girishdhegde/optimizers/output/optimizers.gif)
