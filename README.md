@@ -72,16 +72,16 @@ Clone the repository and open terminal in same directory and follow the below in
 ### To try codes:
 #### SGD:
 ```python SGD.py```
-![](https://github.com/girishdhegde/optimizers/output/sgd.gif)
+![](https://github.com/girishdhegde/optimizers/blob/main/output/sgd.gif)
 #### Momentum:
 ```python momentum.py```
-![](https://github.com/girishdhegde/optimizers/output/momentum.gif)
+![](https://github.com/girishdhegde/optimizers/blob/main/output/momentum.gif)
 #### RMSProp:
 ```python RMSProp.py```
-![](https://github.com/girishdhegde/optimizers/output/rmsprop.gif)
+![](https://github.com/girishdhegde/optimizers/blob/main/output/rmsprop.gif)
 #### Adam:
 ```python Adam.py```
 ![](https://github.com/girishdhegde/optimizers/blob/main/output/adam.gif)
 #### All optimizers:
 ```python optimizers.py```
-![](https://github.com/girishdhegde/optimizers/output/optimizers.gif)
+![](https://github.com/girishdhegde/optimizers/blob/main/output/optimizers.gif)
