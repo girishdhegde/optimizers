@@ -13,10 +13,11 @@ This repo contains implementation of various optimizers with visualization.
 * May shoot even after achieving global minima.
 
 ## 2. Momentum:
-It reduces high variance in SGD and softens the convergence. It accelerates the convergence towards the relevant direction and reduces the fluctuation to the irrelevant direction. 
+It reduces high variance in SGD and softens the convergence. It accelerates the convergence towards the relevant direction and reduces the fluctuation to the irrelevant direction by accumularing past gradients. 
 
- **Algorithm: V(t) = γV(t−1) + α.∇J(θ)
-             θ    = θ − V(t)**
+ **Algorithm: 
+  V(t) = γV(t−1) + α.∇J(θ)
+  θ    = θ − V(t)**
              
 ### Advantages:
 * Reduces the high variance of the parameters.
@@ -28,9 +29,11 @@ It reduces high variance in SGD and softens the convergence. It accelerates the 
 ## 3. RMSProp:
 RMSProp also tries to dampen the oscillations, but in a different way than momentum. RMS prop also takes away the need to adjust learning rate, and does it automatically. More so, RMSProp choses a different learning rate for each parameter.
 
- **Algorithm: V(t)  = ρV(t−1) + (1 - ρ).∇J(θ)²
-             ∇W(t) =  -[α / (√V(t) + ϵ)].∇J(θ)
-             θ     = θ + ∇W(t)**
+ **Algorithm: 
+  V(t)  = ρV(t−1) + (1 - ρ).∇J(θ)²
+  ∇W(t) =  -[α / (√V(t) + ϵ)].∇J(θ)
+  θ     = θ + ∇W(t)**
+
 ### Advantages:
 *  Reduces the oscillations.
 *  Reduces overshooting.
@@ -43,9 +46,11 @@ RMSProp also tries to dampen the oscillations, but in a different way than momen
 RMSProp and Momentum take contrasting approaches. While momentum accelerates our search in direction of minima, RMSProp impedes our search in direction of oscillations.
 Adam or Adaptive Moment Optimization algorithms combines the heuristics of both Momentum and RMSProp.
 
- **Algorithm: m(t) = β1 · m(t−1) + (1 − β1) · ∇J(θ)
-             v(t) = β2 · v(t−1) + (1 − β2) · ∇J(θ)²
-             θ     = θ - α . m(t) / (√V(t) + ϵ)**
+ **Algorithm: 
+  m(t) = β1 · m(t−1) + (1 − β1) · ∇J(θ)
+  v(t) = β2 · v(t−1) + (1 − β2) · ∇J(θ)²
+  θ     = θ - α . m(t) / (√V(t) + ϵ)**
+  
 ### Advantages:
 * Fast convergence.
 * Rectifies vanishing learning rate, high variance.
@@ -54,5 +59,5 @@ Adam or Adaptive Moment Optimization algorithms combines the heuristics of both 
 ### Disadvantages:
 * Computationally expensive.
 
-Adam is the best optimizers. It trains neural networks in less time and more efficiently. But SGD can beat Adam in terms of accuracy if enough time is given(takes too long)
+Adam is the best optimizers. It trains neural networks in less time and more efficiently. But SGD can beat Adam in terms of accuracy if enough time is given(i.e. it takes too long).
 
