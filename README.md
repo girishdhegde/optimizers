@@ -64,3 +64,24 @@ Adam or Adaptive Moment Optimization algorithms combines the heuristics of both 
 
 Adam is the best optimizers. It trains neural networks in less time and more efficiently. But SGD can beat Adam in terms of accuracy if enough time is given(i.e. it takes too long).
 
+## Installation/Usage:
+
+Clone the repository and open terminal in same directory and follow the below instuctions.
+### To check/install requirements:
+```pip install -r requirements.txt```
+### To try codes:
+#### SGD:
+```python SGD.py```
+![](https://github.com/girishdhegde/optimizers/output/sgd.gif)
+#### Momentum:
+```python momentum.py```
+![](https://github.com/girishdhegde/optimizers/output/momentum.gif)
+#### RMSProp:
+```python RMSProp.py```
+![](https://github.com/girishdhegde/optimizers/output/rmsprop.gif)
+#### Adam:
+```python Adam.py```
+![](https://github.com/girishdhegde/optimizers/output/adam.gif)
+#### All optimizers:
+```python optimizers.py```
+![](https://github.com/girishdhegde/optimizers/output/optimizers.gif)
