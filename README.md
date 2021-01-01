@@ -67,8 +67,9 @@ Adam is the best optimizers. It trains neural networks in less time and more eff
 ## Installation/Usage:
 
 Clone the repository and open terminal in same directory and follow the below instuctions.
-### To check/install requirements:
-```pip install -r requirements.txt```
+### Dependencies:
+*  numpy
+*  matplotlib
 ### To try codes:
 #### SGD:
 ```python SGD.py```
