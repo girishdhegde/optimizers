@@ -2,7 +2,7 @@
 Optimizers are algorithms or methods used to change the attributes of  machine learning/neural network such as weights and learning rate in order to reduce the losses.
 This repo contains implementation of various optimizers with visualization.
 
-## 1. SGD:
+## 1. SGD
 
 ### Algorithm:  
 **θ=θ−α⋅∇J(θ)**
@@ -14,7 +14,7 @@ This repo contains implementation of various optimizers with visualization.
 * High variance in model parameters.
 * May shoot even after achieving global minima.
 
-## 2. Momentum:
+## 2. Momentum
 It reduces high variance in SGD and softens the convergence. It accelerates the convergence towards the relevant direction and reduces the fluctuation to the irrelevant direction by accumularing past gradients. 
 
 #### Algorithm:  
@@ -28,7 +28,7 @@ It reduces high variance in SGD and softens the convergence. It accelerates the 
 * One more hyper-parameter is added which needs to be selected manually and accurately.
 * Overshooting
 
-## 3. RMSProp:
+## 3. RMSProp
 RMSProp also tries to dampen the oscillations, but in a different way than momentum. RMS prop also takes away the need to adjust learning rate, and does it automatically. More so, RMSProp choses a different learning rate for each parameter.
 
 ### Algorithm:  
@@ -45,7 +45,7 @@ RMSProp also tries to dampen the oscillations, but in a different way than momen
 * Slow convergence.
 * Vanishing learning rate.
 
-## 4. Adam:
+## 4. Adam
 RMSProp and Momentum take contrasting approaches. While momentum accelerates our search in direction of minima, RMSProp impedes our search in direction of oscillations.
 Adam or Adaptive Moment Optimization algorithms combines the heuristics of both Momentum and RMSProp.
 
@@ -64,7 +64,7 @@ Adam or Adaptive Moment Optimization algorithms combines the heuristics of both 
 
 Adam is the best optimizers. It trains neural networks in less time and more efficiently. But SGD can beat Adam in terms of accuracy if enough time is given(i.e. it takes too long).
 
-## Installation/Usage:
+## Installation/Usage
 
 Clone the repository and open terminal in same directory and follow the below instuctions.
 ### Dependencies:
